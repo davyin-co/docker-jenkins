@@ -10,10 +10,6 @@ services:
     container_name: jenkins
     environment:
       - JAVA_OPTS="-Djava.awt.headless=true"
-      - VIRTUAL_HOST=jenkins.drupalagile.com,jenkins.dev2.drupalagile.com
-      - VIRTUAL_PORT=8080
-      - HTTP_PROXY=v2ray:5080
-      - HTTPS_PROXY=v2ray:5080
     ports:
       - "50000:50000"
       - "8080:8080"
